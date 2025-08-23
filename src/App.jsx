@@ -10,48 +10,48 @@ function App() {
       {
         name: "Öldürme Bugu",
         videos: [
-          { id: 1, title: "Nasıl yapılır?" }
+          { id: 1, title: "Nasıl yapılır?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
         ]
       },
       {
         name: "Ekipmanlar",
         videos: [
-          { id: 1, title: "Ne kuşanılmalı?" }
+          { id: 1, title: "Ne kuşanılmalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
         ]
       },
       {
         name: "Felaketzedeler",
         videos: [
-          { id: 1, title: "Kimle oynamalı?" },
-          { id: 2, title: "Sinerji nedir?" }
+          { id: 1, title: "Kimle oynamalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 2, title: "Sinerji nedir?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
         ]
       },
       {
         name: "Toplama Nesnesi",
         videos: [
-          { id: 1, title: "Ne için?" },
-          { id: 2, title: "Önce hangiler?" },
-          { id: 3, title: "Koleksiyon seti?" },
-          { id: 4, title: "Özel set?" }
+          { id: 1, title: "Ne için?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 2, title: "Önce hangiler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 3, title: "Koleksiyon seti?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 4, title: "Özel set?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
         ]
       },
       {
         name: "Teknik Donanım",
         videos: [
-          { id: 1, title: "Katsayı hesabı?" },
-          { id: 2, title: "İkiz nedir?" },
-          { id: 3, title: "İkiz modları?" },
-          { id: 4, title: "İdeal katsayılar?" }
+          { id: 1, title: "Katsayı hesabı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 2, title: "İkiz nedir?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 3, title: "İkiz modları?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 4, title: "İdeal katsayılar?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
         ]
       },
       {
         name: "Petler",
         videos: [
-          { id: 1, title: "Pet grupları?" },
-          { id: 2, title: "Pet besleme?" },
-          { id: 3, title: "Xeno Pet nedir?" },
-          { id: 4, title: "Hangi Xeno pet?" },
-          { id: 5, title: "Hangi özellikler?" }
+          { id: 1, title: "Pet grupları?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 2, title: "Pet besleme?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 3, title: "Xeno Pet nedir?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 4, title: "Hangi Xeno pet?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+          { id: 5, title: "Hangi özellikler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
         ]
       }
     ]
@@ -67,33 +67,33 @@ function App() {
           {
             name: "Ekipmanlar",
             videos: [
-              { id: 1, title: "Ne kuşanılmalı?" }
+              { id: 1, title: "Ne kuşanılmalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Build",
             videos: [
-              { id: 1, title: "100 Parça" },
-              { id: 2, title: "150 Parça" },
-              { id: 3, title: "200 Parça" }
+              { id: 1, title: "100 Parça", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "150 Parça", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 3, title: "200 Parça", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Bölümler",
             videos: [
-              { id: 1, title: "Sırasıyla neler?" },
-              { id: 2, title: "Süre ne kadar?" },
-              { id: 3, title: "Neler düşer?" }
+              { id: 1, title: "Sırasıyla neler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "Süre ne kadar?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 3, title: "Neler düşer?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Oynama Stratejisi",
             videos: [
-              { id: 1, title: "Merkeze dönüş?" },
-              { id: 2, title: "Dinlen nedir?" },
-              { id: 3, title: "Üst üste bölüm?" },
-              { id: 4, title: "Ekipman farmı?" },
-              { id: 5, title: "Puan farmı?" }
+              { id: 1, title: "Merkeze dönüş?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "Dinlen nedir?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 3, title: "Üst üste bölüm?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 4, title: "Ekipman farmı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 5, title: "Puan farmı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           }
         ]
@@ -104,37 +104,37 @@ function App() {
           {
             name: "Ekipmanlar",
             videos: [
-              { id: 1, title: "Ne kuşanılmalı?" }
+              { id: 1, title: "Ne kuşanılmalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Felaketzedeler",
             videos: [
-              { id: 1, title: "Kimle oynamalı?" },
-              { id: 2, title: "Uyandırma kaç?" },
-              { id: 3, title: "Sinerji mi KB mi?" },
-              { id: 4, title: "Savaş arkadaşı?" }
+              { id: 1, title: "Kimle oynamalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "Uyandırma kaç?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 3, title: "Sinerji mi KB mi?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 4, title: "Savaş arkadaşı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Oynama Stratejisi",
             videos: [
-              { id: 1, title: "Evo sıralaması?" },
-              { id: 2, title: "Savaş örneği?" }
+              { id: 1, title: "Evo sıralaması?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "Savaş örneği?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Teknik Donanım",
             videos: [
-              { id: 1, title: "İkiz hangi mod?" },
-              { id: 2, title: "İdeal katsayılar?" }
+              { id: 1, title: "İkiz hangi mod?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "İdeal katsayılar?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Petler",
             videos: [
-              { id: 1, title: "Hangi Xeno pet?" },
-              { id: 2, title: "Hangi özellikler?" }
+              { id: 1, title: "Hangi Xeno pet?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "Hangi özellikler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           }
         ]
@@ -145,38 +145,38 @@ function App() {
           {
             name: "Ekipmanlar",
             videos: [
-              { id: 1, title: "Ne kuşanılmalı?" }
+              { id: 1, title: "Ne kuşanılmalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Felaketzedeler",
             videos: [
-              { id: 1, title: "Kimle oynamalı?" },
-              { id: 2, title: "Uyandırma kaç?" },
-              { id: 3, title: "Sinerji mi KB mi?" },
-              { id: 4, title: "Savaş arkadaşı?" }
+              { id: 1, title: "Kimle oynamalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "Uyandırma kaç?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 3, title: "Sinerji mi KB mi?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 4, title: "Savaş arkadaşı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Oynama Stratejisi",
             videos: [
-              { id: 1, title: "Aktif beceriler?" },
-              { id: 2, title: "Pasif beceriler?" },
-              { id: 3, title: "Savaş örneği?" }
+              { id: 1, title: "Aktif beceriler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "Pasif beceriler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 3, title: "Savaş örneği?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Teknik Donanım",
             videos: [
-              { id: 1, title: "İkiz hangi mod?" },
-              { id: 2, title: "İdeal katsayılar?" }
+              { id: 1, title: "İkiz hangi mod?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "İdeal katsayılar?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           },
           {
             name: "Petler",
             videos: [
-              { id: 1, title: "Hangi Xeno pet?" },
-              { id: 2, title: "Hangi özellikler?" }
+              { id: 1, title: "Hangi Xeno pet?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
+              { id: 2, title: "Hangi özellikler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
             ]
           }
         ]
@@ -231,9 +231,14 @@ function App() {
                           <span className="bg-blue-100 text-blue-700 rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0 text-sm">
                             {video.id}
                           </span>
-                          <span className="text-gray-800">
+                          <a 
+                            href={video.url || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-gray-800 hover:text-blue-600 hover:underline"
+                          >
                             [ Video ] - {video.title}
-                          </span>
+                          </a>
                         </div>
                       </li>
                     ))}
@@ -266,9 +271,14 @@ function App() {
                                 <span className="bg-blue-100 text-blue-700 rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0 text-sm">
                                   {video.id}
                                 </span>
-                                <span className="text-gray-800">
+                                <a 
+                                  href={video.url || "#"} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  className="text-gray-800 hover:text-blue-600 hover:underline"
+                                >
                                   [ Video ] - {video.title}
-                                </span>
+                                </a>
                               </div>
                             </li>
                           ))}
@@ -284,7 +294,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <footer className="max-w-6xl mx-auto mt-12 pt-6 border-t border-blue-200 text-center text-blue-600">
+      <footer className="max-w-6xl mx-auto mt-12 pt-6 border-t border-blue-200 text-center text-cyan-800">
         <p>© 2025 Ayyıldız Survivorio Rehberi - Tüm Hakları Saklıdır</p>
       </footer>
     </div>
