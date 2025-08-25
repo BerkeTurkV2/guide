@@ -33,49 +33,71 @@ function App() {
     categories: [
       {
         name: "Öldürme Bugu",
-        videos: [
-          { id: 1, title: "Nasıl yapılır?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
-        ]
-      },
-      {
-        name: "Ekipmanlar",
-        videos: [
-          { id: 1, title: "Ne kuşanılmalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
-        ]
-      },
-      {
-        name: "Felaketzedeler",
-        videos: [
-          { id: 1, title: "Kimle oynamalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 2, title: "Sinerji nedir?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
-        ]
-      },
-      {
-        name: "Toplama Nesnesi",
-        videos: [
-          { id: 1, title: "Ne için?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 2, title: "Önce hangiler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 3, title: "Koleksiyon seti?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 4, title: "Özel set?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
-        ]
-      },
-      {
-        name: "Teknik Donanım",
-        videos: [
-          { id: 1, title: "Katsayı hesabı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 2, title: "İkiz nedir?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 3, title: "İkiz modları?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 4, title: "İdeal katsayılar?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+        items: [
+          { 
+            id: 1, 
+            type: "video", 
+            title: "Nasıl yapılır?", 
+            url: "https://youtube.com/shorts/22RaXldJC7g?si=cg85o%02cFIJ1y96qC",
+            description: ""
+          }
         ]
       },
       {
         name: "Petler",
-        videos: [
-          { id: 1, title: "Pet grupları?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 2, title: "Pet besleme?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 3, title: "Xeno Pet nedir?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 4, title: "Hangi Xeno pet?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-          { id: 5, title: "Hangi özellikler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+        items: [
+          { 
+            id: 1, 
+            type: "text", 
+            title: "Xeno pet açma?", 
+            description: "Her pet türünden eveil hayvanları sarı 5 yıldız olarak uyandırırsanız Xeno pet menüsü açılabilir."
+          },
+          { 
+            id: 3, 
+            type: "text", 
+            title: "Hangi Xeno pet?", 
+            description: "Puffy"
+          }
+        ]
+      },
+      {
+        name: "Toplama Nesnesi",
+        items: [
+          { 
+            id: 1, 
+            type: "text", 
+            title: "Ne için?", 
+            description: "Hesaba kıymetli istatistiklerin dahil edilmesi için önemlidir. Bunlardan bazıları; Kritik Oranı, Kritik Hasarı, Saldırı Hasarı vs."
+          },
+          { 
+            id: 2, 
+            type: "text", 
+            title: "Önce hangiler?", 
+            description: "Kırmızı olanlardan drona etki edene öncelik verin. Sarı olanlardan ise kırmızı 3 yıldız özelliği olarak Kritik oran'ı verenlere öncelik verin."
+          },
+          { 
+            id: 3, 
+            type: "text", 
+            title: "Koleksiyon seti?", 
+            description: "Açtığınız ve yükselttiğiniz koleksiyonlar sebebiyle belli kombinasyonlarda etkili özellikler aktif olur. Bu özelliklere yönelik gelişiminizde ilerlemeniz çok mantıklı bir strateji olacaktır."
+          },
+          { 
+            id: 4, 
+            type: "text", 
+            title: "Özel set?", 
+            description: "Elinizde olan mor parçacıkları kullanarak özel setleri yükseltebilirsiniz ve çok kıymetli özellikleri hesabınıza dahil edebilirsiniz."
+          }
+        ]
+      },
+      {
+        name: "Teknik Donanım",
+        items: [
+          { 
+            id: 1, 
+            type: "text", 
+            title: "Katsayı hesabı?", 
+            description: "Sarı 0 : 50 Puan\nSarı 1 : 100 Puan\nSarı 2 : 150 Puan\nSarı 3 : 200 Puan\nKırmızı 0 : 300 Puan\nKırmızı 1 : 400 Puan\nKırmızı 2 : 550 Puan\nKırmızı 3 : 700 Puan\nKırmızı 4 : 850 Puan\nYadigar : 1000 Puan\nİkiz Yadigar : 1000 Puan"
+          }
         ]
       }
     ]
@@ -86,38 +108,89 @@ function App() {
     title: "Deneyimli",
     sections: [
       {
-        title: "Kaçış Operasyonu",
+        title: "Klan Seferi",
         categories: [
           {
             name: "Ekipmanlar",
-            videos: [
-              { id: 1, title: "Ne kuşanılmalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "video", 
+                title: "Ne kuşanılmalı?", 
+                url: "https://youtu.be/99xgCuuKRec?si=584oDSTLOu1vz_ab",
+                description: ""
+              },
+              { 
+                id: 2, 
+                type: "video", 
+                title: "Ne kuşanılmalı 2 ?", 
+                url: "https://youtu.be/99xgCuuKRec?si=584oDSTLOu1vz_ab",
+                description: ""
+              }
             ]
           },
           {
-            name: "Build",
-            videos: [
-              { id: 1, title: "100 Parça", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "150 Parça", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 3, title: "200 Parça", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
-            ]
-          },
-          {
-            name: "Bölümler",
-            videos: [
-              { id: 1, title: "Sırasıyla neler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "Süre ne kadar?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 3, title: "Neler düşer?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            name: "Felaketzedeler",
+            items: [
+              { 
+                id: 1, 
+                type: "text", 
+                title: "Kimle oynamalı?", 
+                description: "Taloxa"
+              },
+              { 
+                id: 2, 
+                type: "text", 
+                title: "Uyandırma kaç?", 
+                description: "En Kırmızı 1 Yıldız uyandırılması gerekmektedir. İmkanın var ise Kırmızı 2 Yıldız'a uyandırıp takımlı pasifin birinci yuvasını doldurabiliyorsan çok daha faydalı olur. Daha iyi imkana sahipsen Kırmızı 3 Yıldız uyandırmasını ciddi anlamda öneririm. Eğer imkanın var ise Kırmızı 4 Yıldız'a uyandırıp takımlı pasifin ikinci yuvasınıda doldurabiliyorsan çok daha faydalı olur. Eğer imkanın el verirse en çok önereceğim Kırmızı 5 Yıldız uyandırması olacaktır. Bunu yapamıyorsun ancak Sinerji levelin yüksek mi? Sinerji levelini gerekirse sıfırla. Mutlaka Kırmızı 5 uyandırma seviyesini aktif etmeye çalış."
+              },
+              { 
+                id: 3, 
+                type: "text", 
+                title: "Sinerji mi K8 mi?", 
+                description: "10 Level Sinerji, K8 uyumdan daha etkilidir. Eğer K8 uyumdan vazgeçtiğinde sinerjini 10 level daha yükseltebiliyorsan sinerji levelini tercih et. Ancak bu söylediğim olmuyor ise K8 uyumunu tercih et."
+              },
+              { 
+                id: 4, 
+                type: "text", 
+                title: "Savaş arkadaşı?", 
+                description: "Sol tarafta Metallia felaketzedesi, sağ tarafta Kral felaketzedesi idealdir. Ancak imkanın el vermiyor ise sol tarafa Kral felaketzedesini, sağ tarafa yaygın felaketzedesini yerleştirebilirsin."
+              }
             ]
           },
           {
             name: "Oynama Stratejisi",
-            videos: [
-              { id: 1, title: "Merkeze dönüş?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "Dinlen nedir?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 3, title: "Üst üste bölüm?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 4, title: "Ekipman farmı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 5, title: "Puan farmı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "text", 
+                title: "Aktif beceriler?", 
+                description: ""
+              },
+            ]
+          },
+          {
+            name: "Teknik Donanım",
+            items: [
+              { 
+                id: 1, 
+                type: "video", 
+                title: "İkiz hangi mod? - İdeal katsayılar?", 
+                url: "https://www.youtube.com/shorts/8pQYvoFxmAM",
+                description: ""
+              },
+            ]
+          },
+          {
+            name: "Petler",
+            items: [
+              { 
+                id: 1, 
+                type: "video", 
+                title: "Hangi Xeno pet?", 
+                url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc",
+                description: ""
+              },
             ]
           }
         ]
@@ -127,80 +200,175 @@ function App() {
         categories: [
           {
             name: "Ekipmanlar",
-            videos: [
-              { id: 1, title: "Ne kuşanılmalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "video", 
+                title: "Ne kuşanılmalı?", 
+                url: "https://youtu.be/9jAHoe5w72M?si=3v3kSjhIPNmSpU6gc",
+                description: ""
+              }
             ]
           },
           {
             name: "Felaketzedeler",
-            videos: [
-              { id: 1, title: "Kimle oynamalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "Uyandırma kaç?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 3, title: "Sinerji mi KB mi?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 4, title: "Savaş arkadaşı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "text", 
+                title: "Kimle oynamalı?", 
+                description: "Taloxa"
+              },
+              { 
+                id: 2, 
+                type: "text", 
+                title: "Uyandırma kaç?", 
+                description: "En Kırmızı 1 Yıldız uyandırılması gerekmektedir. İmkanın var ise Kırmızı 2 Yıldız'a uyandırıp takımlı pasifin birinci yuvasını doldurabiliyorsan çok daha faydalı olur. Daha iyi imkana sahipsen Kırmızı 3 Yıldız uyandırmasını ciddi anlamda öneririm. Eğer imkanın var ise Kırmızı 4 Yıldız'a uyandırıp takımlı pasifin ikinci yuvasında doldurabiliyorsan çok daha faydalı olur. Eğer imkanın el verirse en çok önereceğim Kırmızı 5 Yıldız uyandırması olacaktır. Bunu yapamıyorsan ancak Sinerji levelin yüksek mi? Sinerji levelini gerekirse sıfırla. Mutlaka Kırmızı 5 uyandırma seviyesini aktif etmeye çalış."
+              },
+              { 
+                id: 3, 
+                type: "text", 
+                title: "Sinerji mi KB mi?", 
+                description: "10 Level Sinerji, KB uyumdan daha etkilidir. Eğer KB uyumdan vazgeçtiğinde sinerjini 10 level daha yükseltebiliyorsan sinerji levelini tercih et. Ancak bu söylediğim olmuyor ise KB uyumunu tercih et."
+              },
+              { 
+                id: 4, 
+                type: "text", 
+                title: "Savaş arkadaşı?", 
+                description: "Sol tarafta Metalfa felaketzedesi, sağ tarafta Kral felaketzedesi idealdir. Ancak imkanın el vermiyor ise sol tarafta Kral felaketzedesi, sağ tarafta yaygın felaketzedesi yerleştirebilirsin."
+              }
             ]
           },
           {
             name: "Oynama Stratejisi",
-            videos: [
-              { id: 1, title: "Evo sıralaması?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "Savaş örneği?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "text", 
+                title: "Evo sıralaması?", 
+                description: "3 2 1 4 5"
+              }
             ]
           },
           {
             name: "Teknik Donanım",
-            videos: [
-              { id: 1, title: "İkiz hangi mod?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "İdeal katsayılar?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "video", 
+                title: "İkiz hangi mod? - İdeal katsayılar?", 
+                url: "https://youtu.be/1pM6mmEams?si=KB0t9OcHyHOcz8Z",
+                description: ""
+              },
             ]
           },
           {
             name: "Petler",
-            videos: [
-              { id: 1, title: "Hangi Xeno pet?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "Hangi özellikler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "video", 
+                title: "Hangi pet?", 
+                url: "https://youtube.com/shorts/T3IsAH8VD-E?si=BYJHOvGPj1mMNH_",
+                description: ""
+              }
             ]
           }
         ]
       },
       {
-        title: "Klan Seferi",
+        title: "Kaçış Operasyonu",
         categories: [
           {
             name: "Ekipmanlar",
-            videos: [
-              { id: 1, title: "Ne kuşanılmalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "text", 
+                title: "S kuşanmalar? (mor)", 
+                description: "1. Boşluk S Silahı\n2. Kaos S Zırhı\n3. Boşluk S Kolyesi\n4. Kaos S Kemeri\n5. Boşluk S Eldiveni\n6. Kaos S Ayakkabısı"
+              },
+              { 
+                id: 2, 
+                type: "text", 
+                title: "S kuşanmalar? (sarı)", 
+                description: "1. Boşluk S Silahı\n2. Kaos S Zırhı\n3. Boşluk S Kolyesi\n4. Kaos S Kemeri\n5. Boşluk S Eldiveni\n6. Kaos S Ayakkabısı"
+              },
+              { 
+                id: 3, 
+                type: "text", 
+                title: "S kuşanmalar? (kırmızı)", 
+                description: "1. Boşluk S Silahı\n2. Kaos S Zırhı\n3. Boşluk S Kolyesi\n4. Kaos S Kemeri\n5. Boşluk S Eldiveni\n6. Kaos S Ayakkabısı"
+              }
             ]
           },
           {
-            name: "Felaketzedeler",
-            videos: [
-              { id: 1, title: "Kimle oynamalı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "Uyandırma kaç?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 3, title: "Sinerji mi KB mi?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 4, title: "Savaş arkadaşı?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            name: "Build",
+            items: [
+              { 
+                id: 1, 
+                type: "text", 
+                title: "200 Parça", 
+                description: "[Resim - 200 Parça ekipman görseli]"
+              }
+            ]
+          },
+          {
+            name: "Bölümler",
+            items: [
+              { 
+                id: 1, 
+                type: "text", 
+                title: "Sırasıyla neler?", 
+                description: "- Kolay 1-6\n- Orta 1-6\n- Zor 1-6\n- Epik 1-6\n- Efsane 1-6\n- Destansı 1-6\n- Kabus 1-6\n- Rüya Cehennemi 1-12"
+              },
+              { 
+                id: 2, 
+                type: "text", 
+                title: "Süre ne kadar?", 
+                description: "Her bölüm 5 dakika"
+              },
+              { 
+                id: 3, 
+                type: "text", 
+                title: "Neler düşer?", 
+                description: "- Mor S Parçaları Zor bölüm itibariyle düşmeye başlar.\n- Sarı S Parçaları Efsane bölüm itibariyle düşmeye başlar\n- Kırmızı S Parçaları Kabus bölüm itibariyle düşmeye başlar"
+              }
             ]
           },
           {
             name: "Oynama Stratejisi",
-            videos: [
-              { id: 1, title: "Aktif beceriler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "Pasif beceriler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 3, title: "Savaş örneği?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
-            ]
-          },
-          {
-            name: "Teknik Donanım",
-            videos: [
-              { id: 1, title: "İkiz hangi mod?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "İdeal katsayılar?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
-            ]
-          },
-          {
-            name: "Petler",
-            videos: [
-              { id: 1, title: "Hangi Xeno pet?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" },
-              { id: 2, title: "Hangi özellikler?", url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc" }
+            items: [
+              { 
+                id: 1, 
+                type: "text", 
+                title: "Merkeze dönüş?", 
+                description: "Eğer son öldürdüğün boss'u öldürmekte zorlanıyorsan bunu Midgame'den itibaren pişmanlık yaşamadığın sürürleri tercih edersin."
+              },
+              { 
+                id: 2, 
+                type: "text", 
+                title: "Dinlen nedir?", 
+                description: "Savaşın bittiğinden sonra devam etmek veya merkeze dönüş konusunda karar vereceksin ancak zamanın buna el vermiyor, dahası sonra o zaman bitti tıklayarak mola vermiş oluyorsun. Daha sonra müsait zamanında kaçış operasyonu moduna girince bu pencere tekrar karşına çıkkar."
+              },
+              { 
+                id: 3, 
+                type: "text", 
+                title: "Üst üste boss öldürüm?", 
+                description: "Üst üste en fazla 2 Boss öldürdükten sonraki savaşacağınız her boss normalden çok daha güçlü ve zorlu olarak karşınıza çıkacaktır. Bu sebepten dolayı 2-3 tane boss öldürdükten sonra merkeze dönüş yapmanız faydalı olacaktır."
+              },
+              { 
+                id: 4, 
+                type: "text", 
+                title: "Ekipman farmı?", 
+                description: "Zor bölümde oynayın ve Mor renkteKi S ekipmanların farmını yapın ve kuşanın. Daha sonrasında Bölümlerde ilerlemeye devam edin. Efsane bölümünde ise Sarı S ekipmanları elde edin, tüm ekipmanlarınız ideal Sarı renkteKi S Parçaları olana kadar o bölümde vakit geçirin. Tamamladığınızda ise bölümlerde ilerlemeye devam edin. Kabus ve Rüya cehennemi bölümlerinde ise kırmızı ekipman toplamaya odaklanın."
+              },
+              { 
+                id: 5, 
+                type: "text", 
+                title: "Puan farmı?", 
+                description: "Diğer bölümlerde elde edeceğiniz hedefsize hizmet etmeyecektir. Bu yüzden Rüya Cehennemi bölümündeyken kırmızı ve sarı toplama nesneleri biriktirin. Satın. Daha fazla puan elde edin."
+              }
             ]
           }
         ]
@@ -285,32 +453,45 @@ function App() {
                     <h3 className="font-bold text-lg">{category.name}</h3>
                   </div>
                   <ul className="p-4">
-                    {category.videos.map(video => (
-                      <li key={video.id} className="mb-2 last:mb-0">
+                    {category.items.map(item => (
+                      <li key={item.id} className="mb-4 last:mb-0">
                         <div className="flex items-start">
                           <span className="bg-blue-100 text-blue-700 rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0 text-sm">
-                            {video.id}
+                            {item.id}
                           </span>
-                          <div>
-                            <button 
-                              onClick={() => toggleVideo(category.name, video.id)}
-                              className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2"
-                            >
-                              [ Video ] - {video.title}
-                            </button>
-                            
-                            {/* Video oynatıcı - sadece ilgili video açıksa göster */}
-                            {activeVideos[`${category.name}-${video.id}`] && (
-                              <div className="mt-2 mb-3 w-[300px]">
-                                <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
-                                  <iframe
-                                    src={getYoutubeEmbedUrl(video.url)}
-                                    className="absolute top-0 left-0 w-full h-full"
-                                    style={{ maxHeight: '300px'}}
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    title="YouTube video player"
-                                  ></iframe>
+                          <div className="w-full">
+                            {item.type === 'video' ? (
+                              <div>
+                                <button 
+                                  onClick={() => toggleVideo(category.name, item.id)}
+                                  className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2 font-medium"
+                                >
+                                  [ Video ] - {item.title}
+                                </button>
+                                
+                                {/* Video oynatıcı - sadece ilgili video açıksa göster */}
+                                {activeVideos[`${category.name}-${item.id}`] && (
+                                  <div className="mt-2 mb-3 w-[300px]">
+                                    <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+                                      <iframe
+                                        src={getYoutubeEmbedUrl(item.url)}
+                                        className="absolute top-0 left-0 w-full h-full"
+                                        style={{ maxHeight: '300px'}}
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        title="YouTube video player"
+                                      ></iframe>
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                            ) : (
+                              <div>
+                                <div className="font-medium text-gray-800 mb-1">
+                                  [ Yazı ] - {item.title}
+                                </div>
+                                <div className="text-gray-600 bg-gray-50 p-3 rounded-md text-sm whitespace-pre-line">
+                                  {item.description}
                                 </div>
                               </div>
                             )}
@@ -343,49 +524,95 @@ function App() {
                   {activeSections[section.title] && (
                     <div className="p-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {section.categories.map((category, catIndex) => (
-                      <div key={catIndex} className="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div className="bg-cyan-700 text-white py-3 px-4">
-                          <h4 className="font-bold text-lg">{category.name}</h4>
-                        </div>
-                        <ul className="p-4">
-                          {category.videos.map(video => (
-                            <li key={video.id} className="mb-2 last:mb-0">
-                              <div className="flex items-start">
-                                <span className="bg-blue-100 text-blue-700 rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0 text-sm">
-                                  {video.id}
-                                </span>
-                                <div>
-                                  <button 
-                                    onClick={() => toggleVideo(category.name, video.id)}
-                                    className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2"
-                                  >
-                                    [ Video ] - {video.title}
-                                  </button>
-                                  
-                                  {/* Video oynatıcı - sadece ilgili video açıksa göster */}
-                                  {activeVideos[`${category.name}-${video.id}`] && (
-                                    <div className="mt-2 mb-3 w-[260px]">
-                                      <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
-                                        <iframe
-                                          src={getYoutubeEmbedUrl(video.url)}
-                                          className="absolute top-0 left-0 w-full h-full"
-                                          style={{ maxHeight: '300px' }}
-                                          frameBorder="0"
-                                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                          allowFullScreen
-                                          title="YouTube video player"
-                                        ></iframe>
+                        {section.categories.map((category, catIndex) => (
+                          <div key={catIndex} className="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div className="bg-cyan-700 text-white py-3 px-4">
+                              <h4 className="font-bold text-lg">{category.name}</h4>
+                            </div>
+                            <ul className="p-4">
+                              {category.items ? (
+                                category.items.map(item => (
+                                  <li key={item.id} className="mb-4 last:mb-0">
+                                    <div className="flex items-start">
+                                      <span className="bg-blue-100 text-blue-700 rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0 text-sm">
+                                        {item.id}
+                                      </span>
+                                      <div className="w-full">
+                                        {item.type === 'video' ? (
+                                          <div>
+                                            <button 
+                                              onClick={() => toggleVideo(category.name, item.id)}
+                                              className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2 font-medium"
+                                            >
+                                              [ Video ] - {item.title}
+                                            </button>
+                                            
+                                            {activeVideos[`${category.name}-${item.id}`] && (
+                                              <div className="mt-2 mb-3 w-[300px]">
+                                                <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+                                                  <iframe
+                                                    src={getYoutubeEmbedUrl(item.url)}
+                                                    className="absolute top-0 left-0 w-full h-full"
+                                                    style={{ maxHeight: '300px'}}
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowFullScreen
+                                                    title="YouTube video player"
+                                                  ></iframe>
+                                                </div>
+                                              </div>
+                                            )}
+                                          </div>
+                                        ) : (
+                                          <div>
+                                            <div className="font-medium text-gray-800 mb-1">
+                                              [ Yazı ] - {item.title}
+                                            </div>
+                                            <div className="text-gray-600 bg-gray-50 p-3 rounded-md text-sm whitespace-pre-line">
+                                              {item.description}
+                                            </div>
+                                          </div>
+                                        )}
                                       </div>
                                     </div>
-                                  )}
-                                </div>
-                              </div>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
+                                  </li>
+                                ))
+                              ) : (
+                                category.videos && category.videos.map(video => (
+                                  <li key={video.id} className="mb-2 last:mb-0">
+                                    <div className="flex items-start">
+                                      <span className="bg-blue-100 text-blue-700 rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0 text-sm">
+                                        {video.id}
+                                      </span>
+                                      <div>
+                                        <button 
+                                          onClick={() => toggleVideo(category.name, video.id)}
+                                          className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2"
+                                        >
+                                          [ Video ] - {video.title}
+                                        </button>
+                                        
+                                        {activeVideos[`${category.name}-${video.id}`] && (
+                                          <div className="mt-2 mb-3 w-[300px]">
+                                            <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+                                              <iframe
+                                                src={getYoutubeEmbedUrl(video.url)}
+                                                className="absolute top-0 left-0 w-full h-full"
+                                                style={{ maxHeight: '300px' }}
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowFullScreen
+                                                title="YouTube video player"
+                                              ></iframe>
+                                            </div>
+                                          </div>
+                                        )}
+                                      </div>
+                                    </div>
+                                  </li>
+                                ))
+                              )}
+                            </ul>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   )}
