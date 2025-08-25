@@ -476,8 +476,8 @@ function App() {
                                 
                                 {/* Video oynatıcı - sadece ilgili video açıksa göster */}
                                 {activeItems[`${category.name}-${item.id}`] && (
-                                  <div className="mt-2 mb-3 w-[300px]">
-                                    <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+                                  <div className="mt-2 mb-3 w-full flex justify-center">
+                                    <div className="relative w-[280px]" style={{ paddingBottom: '56.25%', height: 0 }}>
                                       <iframe
                                         src={getYoutubeEmbedUrl(item.url)}
                                         className="absolute top-0 left-0 w-full h-full"
@@ -559,8 +559,8 @@ function App() {
                                             </button>
                                             
                                             {activeItems[`${category.name}-${item.id}`] && (
-                                              <div className="mt-2 mb-3 w-[300px]">
-                                                <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+                                              <div className="mt-2 mb-3 w-full flex justify-center">
+                                                <div className="relative w-[260px]" style={{ paddingBottom: '56.25%', height: 0 }}>
                                                   <iframe
                                                     src={getYoutubeEmbedUrl(item.url)}
                                                     className="absolute top-0 left-0 w-full h-full"
@@ -605,12 +605,12 @@ function App() {
                                           onClick={() => toggleVideo(category.name, video.id)}
                                           className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2"
                                         >
-                                          [ Video ] - {video.title}
+                                          - {video.title}
                                         </button>
                                         
                                         {activeVideos[`${category.name}-${video.id}`] && (
-                                          <div className="mt-2 mb-3 w-[300px]">
-                                            <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+                                          <div className="mt-2 mb-3 w-full flex justify-center">
+                                            <div className="relative w-[260px]" style={{ paddingBottom: '56.25%', height: 0 }}>
                                               <iframe
                                                 src={getYoutubeEmbedUrl(video.url)}
                                                 className="absolute top-0 left-0 w-full h-full"
