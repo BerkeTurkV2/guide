@@ -15,6 +15,11 @@ const getYoutubeEmbedUrl = (url) => {
     const videoId = new URLSearchParams(url.split('?')[1]).get('v');
     console.log('Çıkarılan Video ID:', videoId);
     return `https://www.youtube.com/embed/${videoId}`;
+  } else if (url.includes('youtube.com/shorts/')) {
+    // youtube.com/shorts formatı için
+    const videoId = url.split('youtube.com/shorts/')[1].split('?')[0];
+    console.log('Çıkarılan Shorts Video ID:', videoId);
+    return `https://www.youtube.com/embed/${videoId}`;
   }
   
   // Geçersiz URL durumunda orijinal URL'yi döndür
@@ -117,14 +122,14 @@ function App() {
                 id: 1, 
                 type: "video", 
                 title: "Ne kuşanılmalı?", 
-                url: "https://youtu.be/99xgCuuKRec?si=584oDSTLOu1vz_ab",
+                url: "https://www.youtube.com/watch?v=09XqC0uKfec&ab_channel=VeterinerHekimOnurKaraca",
                 description: ""
               },
               { 
                 id: 2, 
                 type: "video", 
                 title: "Ne kuşanılmalı 2 ?", 
-                url: "https://youtu.be/99xgCuuKRec?si=584oDSTLOu1vz_ab",
+                url: "https://www.youtube.com/watch?v=pEtHII8nJcE&ab_channel=VeterinerHekimOnurKaraca",
                 description: ""
               }
             ]
@@ -176,7 +181,7 @@ function App() {
                 id: 1, 
                 type: "video", 
                 title: "İkiz hangi mod? - İdeal katsayılar?", 
-                url: "https://www.youtube.com/shorts/8pQYvoFxmAM",
+                url: "https://www.youtube.com/shorts/CMxbGfFHVJg",
                 description: ""
               },
             ]
@@ -188,7 +193,7 @@ function App() {
                 id: 1, 
                 type: "video", 
                 title: "Hangi Xeno pet?", 
-                url: "https://youtu.be/fyX1JPxd6GI?si=dKCzaj4QP6UIf9yc",
+                url: "https://www.youtube.com/shorts/T3isAH8VD-E",
                 description: ""
               },
             ]
@@ -205,7 +210,7 @@ function App() {
                 id: 1, 
                 type: "video", 
                 title: "Ne kuşanılmalı?", 
-                url: "https://youtu.be/9jAHoe5w72M?si=3v3kSjhIPNmSpU6gc",
+                url: "https://www.youtube.com/watch?v=9jAHoq5w7zM&ab_channel=VeterinerHekimOnurKaraca",
                 description: ""
               }
             ]
@@ -257,7 +262,7 @@ function App() {
                 id: 1, 
                 type: "video", 
                 title: "İkiz hangi mod? - İdeal katsayılar?", 
-                url: "https://youtu.be/1pM6mmEams?si=KB0t9OcHyHOcz8Z",
+                url: "https://www.youtube.com/shorts/Tb1M6mnEbms",
                 description: ""
               },
             ]
@@ -269,7 +274,7 @@ function App() {
                 id: 1, 
                 type: "video", 
                 title: "Hangi pet?", 
-                url: "https://youtube.com/shorts/T3IsAH8VD-E?si=BYJHOvGPj1mMNH_",
+                url: "https://www.youtube.com/shorts/T3isAH8VD-E",
                 description: ""
               }
             ]
