@@ -29,7 +29,7 @@ const getYoutubeEmbedUrl = (url) => {
 
 function App() {
   const [activeTab, setActiveTab] = useState('temel')
-  const [activeVideos, setActiveVideos] = useState({})
+  const [activeItems, setActiveItems] = useState({})
   const [activeSections, setActiveSections] = useState({})
 
   // Temel Seviye içeriği
@@ -58,7 +58,7 @@ function App() {
             description: "Her pet türünden eveil hayvanları sarı 5 yıldız olarak uyandırırsanız Xeno pet menüsü açılabilir."
           },
           { 
-            id: 3, 
+            id: 2, 
             type: "text", 
             title: "Hangi Xeno pet?", 
             description: "Puffy"
@@ -233,8 +233,8 @@ function App() {
               { 
                 id: 3, 
                 type: "text", 
-                title: "Sinerji mi KB mi?", 
-                description: "10 Level Sinerji, KB uyumdan daha etkilidir. Eğer KB uyumdan vazgeçtiğinde sinerjini 10 level daha yükseltebiliyorsan sinerji levelini tercih et. Ancak bu söylediğim olmuyor ise KB uyumunu tercih et."
+                title: "Sinerji mi K8 mi?", 
+                description: "10 Level Sinerji, K8 uyumdan daha etkilidir. Eğer K8 uyumdan vazgeçtiğinde sinerjini 10 level daha yükseltebiliyorsan sinerji levelini tercih et. Ancak bu söylediğim olmuyor ise K8 uyumunu tercih et."
               },
               { 
                 id: 4, 
@@ -261,7 +261,7 @@ function App() {
               { 
                 id: 1, 
                 type: "video", 
-                title: "İkiz hangi mod? - İdeal katsayılar?", 
+                title: "İkiz hangi mod? - İdeal katsayılar??", 
                 url: "https://www.youtube.com/shorts/Tb1M6mnEbms",
                 description: ""
               },
@@ -381,20 +381,20 @@ function App() {
     ]
   }
 
-  // Video gösterme/gizleme fonksiyonu
-  const toggleVideo = (categoryId, videoId) => {
-    const videoKey = `${categoryId}-${videoId}`;
+  // İçerik gösterme/gizleme fonksiyonu
+  const toggleItem = (categoryId, itemId) => {
+    const itemKey = `${categoryId}-${itemId}`;
     
-    setActiveVideos(prev => {
-      // Eğer video zaten açıksa, kapat
-      if (prev[videoKey]) {
+    setActiveItems(prev => {
+      // Eğer içerik zaten açıksa, kapat
+      if (prev[itemKey]) {
         const newState = {...prev};
-        delete newState[videoKey];
+        delete newState[itemKey];
         return newState;
       } 
-      // Video kapalıysa, aç
+      // İçerik kapalıysa, aç
       else {
-        return {...prev, [videoKey]: true};
+        return {...prev, [itemKey]: true};
       }
     });
   };
@@ -468,14 +468,14 @@ function App() {
                             {item.type === 'video' ? (
                               <div>
                                 <button 
-                                  onClick={() => toggleVideo(category.name, item.id)}
+                                  onClick={() => toggleItem(category.name, item.id)}
                                   className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2 font-medium"
                                 >
-                                  [ Video ] - {item.title}
+                                  - {item.title}
                                 </button>
                                 
                                 {/* Video oynatıcı - sadece ilgili video açıksa göster */}
-                                {activeVideos[`${category.name}-${item.id}`] && (
+                                {activeItems[`${category.name}-${item.id}`] && (
                                   <div className="mt-2 mb-3 w-[300px]">
                                     <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
                                       <iframe
@@ -492,12 +492,18 @@ function App() {
                               </div>
                             ) : (
                               <div>
-                                <div className="font-medium text-gray-800 mb-1">
-                                  [ Yazı ] - {item.title}
-                                </div>
-                                <div className="text-gray-600 bg-gray-50 p-3 rounded-md text-sm whitespace-pre-line">
-                                  {item.description}
-                                </div>
+                                <button 
+                                  onClick={() => toggleItem(category.name, item.id)}
+                                  className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2 font-medium"
+                                >
+                                  - {item.title}
+                                </button>
+                                
+                                {activeItems[`${category.name}-${item.id}`] && (
+                                  <div className="text-gray-600 bg-gray-50 p-3 rounded-md text-sm whitespace-pre-line mt-2">
+                                    {item.description}
+                                  </div>
+                                )}
                               </div>
                             )}
                           </div>
@@ -546,19 +552,19 @@ function App() {
                                         {item.type === 'video' ? (
                                           <div>
                                             <button 
-                                              onClick={() => toggleVideo(category.name, item.id)}
-                                              className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2 font-medium"
+                                              onClick={() => toggleItem(category.name, item.id)}
+                                              className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2"
                                             >
-                                              [ Video ] - {item.title}
+                                              - {item.title}
                                             </button>
                                             
-                                            {activeVideos[`${category.name}-${item.id}`] && (
+                                            {activeItems[`${category.name}-${item.id}`] && (
                                               <div className="mt-2 mb-3 w-[300px]">
                                                 <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
                                                   <iframe
                                                     src={getYoutubeEmbedUrl(item.url)}
                                                     className="absolute top-0 left-0 w-full h-full"
-                                                    style={{ maxHeight: '300px'}}
+                                                    style={{ maxHeight: '300px' }}
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                     allowFullScreen
                                                     title="YouTube video player"
@@ -569,12 +575,18 @@ function App() {
                                           </div>
                                         ) : (
                                           <div>
-                                            <div className="font-medium text-gray-800 mb-1">
-                                              [ Yazı ] - {item.title}
-                                            </div>
-                                            <div className="text-gray-600 bg-gray-50 p-3 rounded-md text-sm whitespace-pre-line">
-                                              {item.description}
-                                            </div>
+                                            <button 
+                                              onClick={() => toggleItem(category.name, item.id)}
+                                              className="text-gray-800 hover:text-blue-600 hover:underline cursor-pointer text-left mb-2 font-medium"
+                                            >
+                                              - {item.title}
+                                            </button>
+                                            
+                                            {activeItems[`${category.name}-${item.id}`] && (
+                                              <div className="text-gray-600 bg-gray-50 p-3 rounded-md text-sm whitespace-pre-line mt-2">
+                                                {item.description}
+                                              </div>
+                                            )}
                                           </div>
                                         )}
                                       </div>
